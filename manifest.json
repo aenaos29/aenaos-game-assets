@@ -1,0 +1,24 @@
+{
+  "manifestVersion": "0.01",
+  "assets": [
+    {
+      "id": "aenaos.objects.avocado",
+      "name": "Avocado",
+      "category": "objects",
+      "path": "objects/avocado-v0.01.glb",
+      "publicUrl": null,
+      "format": "GLB 2.0",
+      "sizeBytes": 466364,
+      "sha256": "66f7ba7b28459e49dffef0c0a6ccf279ea9913296ac58da699ebbd03cf04d73f",
+      "dimensions": {"x": 0.04256182, "y": 0.06289579855, "z": 0.0276180011, "unit": "m"},
+      "scale": {"fileMultiplier": 1, "units": "meters"},
+      "forwardOrientation": null,
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+      "originalSource": "https://github.com/KhronosGroup/glTF-Sample-Assets/blob/0b4f3a5862f3037c7092206e75c6f2a31a504ca5/Models/Avocado/glTF-Binary/Avocado.glb",
+      "attribution": "Microsoft — Avocado model and textures, 2017",
+      "version": "0.01",
+      "verification": {"localBinary": "passed", "hosting": "pending", "playgroundPreview": "pending", "publishedPlayground": "pending", "mobilePerformance": "pending"}
+    }
+  ]
+}
