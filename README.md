@@ -18,6 +18,7 @@ See [license and provenance](THIRD_PARTY_NOTICES.md), [manifest](manifest.json),
 - [Navigation](specifications/visual-engine/v0.1/navigation.md)
 - [Android characters](specifications/visual-engine/v0.1/android-characters.md)
 - [Camera, controls and UI](specifications/visual-engine/v0.1/camera-controls-ui.md)
-- [Reference handoff](specifications/visual-engine/v0.1/reference-handoff.md)
+- [Reference handoff v0.1](specifications/visual-engine/v0.1/reference-handoff.md)
+- [Technical handoff v0.2](specifications/visual-engine/v0.2/veridian-plaza-technical-handoff-v0.2.md)
 
 These documents distinguish reusable engine specifications from Veridian Plaza-specific design decisions. They are documentation only; no implementation or independent validation is claimed.
