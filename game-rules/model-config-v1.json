@@ -1,0 +1,63 @@
+{
+  "modelId": "emma-vs-aenaos-s01-mathematical-model",
+  "version": "1.0.0-locked",
+  "lockedAt": "2026-11-28",
+  "randomization": {
+    "commonJurorAndLawyer": {
+      "distribution": "uniform",
+      "min": 0.9,
+      "max": 1.1,
+      "scope": "one coefficient per juror and per lawyer, persisted for the trial"
+    },
+    "witnessBySide": {
+      "distribution": "uniform",
+      "min": 0.7,
+      "max": 1.3,
+      "scope": "one coefficient per witness and lawyer side, persisted for the trial"
+    }
+  },
+  "budgets": {
+    "canonicalInferences": 50.0,
+    "evidence": 20.0,
+    "contextLinks": 10.0,
+    "speeches": 20.0,
+    "total": 100.0
+  },
+  "opportunities": {
+    "questionsPerSidePerWitness": 5,
+    "objectionsPerSidePerWitness": 2,
+    "sustainedConsumesOpportunity": true,
+    "sustainedScore": 0,
+    "passEndsRemainingOpportunities": true
+  },
+  "rules": {
+    "playerSeesEffectiveQuestionWeights": false,
+    "randomizePerQuestion": false,
+    "preserveCanonicalSigns": true,
+    "deduplicateActivatedInferenceIds": true,
+    "sameSeedReplay": true,
+    "civilStandard": "preponderance"
+  },
+  "effectiveQuestionValue": {
+    "formula": "canonicalSignedValue * commonCoefficient * witnessSideCoefficient * positionCoefficient",
+    "positionCoefficient": {
+      "definedBy": "trial implementation",
+      "mustNotCreateNewBudget": true,
+      "mustNotChangeCanonicalSign": true
+    }
+  },
+  "objections": {
+    "sustained": {
+      "questionScore": 0,
+      "answerProcessed": false,
+      "stressApplied": false,
+      "inferenceActivated": false,
+      "linkActivated": false
+    },
+    "overruled": {
+      "questionCountsNormally": true,
+      "strengthensAffectedWitness": true,
+      "consumesAttempt": true
+    }
+  }
+}
